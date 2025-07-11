@@ -4,6 +4,7 @@ import Dashboard from "/src/pages/Dashboard/dashboard";
 import Orders from "/src/pages/Orders/orders";
 import Products from "/src/pages/Products/products";
 import Other from "/src/pages/Other/other";
+import Login from "./pages/login/login";
 function App() {
   const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ function App() {
           element: <Other />,
         },
       ],
+    },
+    {
+      path: "/login",
+      element: <Login />,
     },
   ]);
   return <RouterProvider router={router} />;
