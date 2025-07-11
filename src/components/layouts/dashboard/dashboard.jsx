@@ -35,13 +35,13 @@ function useDemoRouter() {
   return {
     pathname: location.pathname,
     searchParams: new URLSearchParams(location.search),
-    navigate, 
+    navigate,
   };
 }
 
 const Dashbord = () => {
-  const router = useDemoRouter("/dashboard");
-  
+  const router = useDemoRouter("/");
+
   const demoWindow = typeof window !== "undefined" ? window : undefined;
 
   return (
